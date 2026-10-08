@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUD productos</title>
+    <link href="./Classes/src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-purple-100">
+    <h1 class="text-4xl text-center font-bold italic text-gray-500">
+      Agregar Nuevo Productos
+    </h1>
+    <br />
+    <p class="text-2xl text-center font-mono text-gray-400">
+      Completa los campos para agregar producto
+    </p>
+    <br />
+    <form
+      id="formulario"
+      class="p-2 flex flex-col gap-4 border w-1/2 mx-auto bg-pink-100 rounded"
+    >
+      <input
+        type="number"
+        id="codigo"
+        placeholder="Codigo"
+        class="border rounded p-2 w-full mb-2"
+      />
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre"
+        class="border rounded p-2 w-full mb-2"
+      />
+      <input
+        type="number"
+        id="precio"
+        placeholder="Precio"
+        class="border rounded p-2 w-full mb-2"
+      />
+      <input
+        type="url"
+        id="imagen"
+        placeholder="Imagen"
+        class="border rounded p-2 w-full mb-2 width-50"
+      />
+      <button
+        type="submit"
+        id="btnGuardar"
+        class="bg-gray-400 text-white font-mono text-center hover:bg-red-300"
+      >
+        Agregar Producto
+      </button>
+    </form>
+    <br />
+    <h2 class="text-center text-2l">Productos registrados</h2>
+    <br />
+    <table id="tablaProducto" class="border w-1/2 mx-auto">
+      <tr class="border">
+        <th class="border">Código</th>
+        <th class="border">Nombre</th>
+        <th class="border">Precio</th>
+        <th class="border">Imagen</th>
+        <th class="border">Acción</th>
+      </tr>
+    </table>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
